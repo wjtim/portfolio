@@ -18,61 +18,34 @@ import rinseri from '../Images/MTGImages/Rin and Seri, Inseparable (1JdYFCG7fFo7
 
 const TiltCardCarousel = () => {
   const cards = [
-    { id: 1, title: 'Card 1', description: 'This is the first card.', imageUrl: atog, linkUrl: 'https://archidekt.com/decks/6466202/atogs_feast_of_success' },
-    { id: 2, title: 'Card 2', description: 'This is the second card.', imageUrl: breya, linkUrl: 'https://archidekt.com/decks/5264238/if_she_breathe_she_a_thopt' },
-    { id: 3, title: 'Card 3', description: 'This is the third card.', imageUrl: chulane, linkUrl: 'https://archidekt.com/decks/5264140/bant_solitaire' },
-    { id: 4, title: 'Card 4', description: 'This is the fourth card.', imageUrl: firesong, linkUrl: 'https://archidekt.com/decks/5264217/masochistic_minotaurs' },
-    { id: 5, title: 'Card 5', description: 'This is the fifth card.', imageUrl: geralf, linkUrl: 'https://archidekt.com/decks/7822160/geralf_needs_his_cereal' },
-    { id: 6, title: 'Card 6', description: 'This is the sixth card.', imageUrl: gishath, linkUrl: 'https://archidekt.com/decks/7118593/phillips_dinosour' },
-    { id: 7, title: 'Card 7', description: 'This is the seventh card.', imageUrl: grenzo, linkUrl: 'https://archidekt.com/decks/6012940/grenzo_christmas_warden' },
-    { id: 8, title: 'Card 8', description: 'This is the eight card.', imageUrl: horde, linkUrl: 'https://archidekt.com/decks/5264226/gaslight_gatekeep_girlboss' },
-    { id: 9, title: 'Card 9', description: 'This is the ninth card.', imageUrl: meren, linkUrl: 'https://archidekt.com/decks/5264206/die_another_day' },
-    { id: 10, title: 'Card 10', description: 'This is the tenth card.', imageUrl: okaun, linkUrl: 'https://archidekt.com/decks/5724722/heads_i_win_tails_you_lose' },
-    { id: 11, title: 'Card 11', description: 'This is the eleventh card.', imageUrl: rinseri, linkUrl: 'https://archidekt.com/decks/5288599/its_raining_these_guys' }
+    { id: 1, title: 'Atog', description: 'This is the first card.', imageUrl: atog, linkUrl: 'https://archidekt.com/decks/6466202/atogs_feast_of_success' },
+    { id: 2, title: 'Breya', description: 'This is the second card.', imageUrl: breya, linkUrl: 'https://archidekt.com/decks/5264238/if_she_breathe_she_a_thopt' },
+    { id: 3, title: 'Chulane', description: 'This is the third card.', imageUrl: chulane, linkUrl: 'https://archidekt.com/decks/5264140/bant_solitaire' },
+    { id: 4, title: 'FireSong', description: 'This is the fourth card.', imageUrl: firesong, linkUrl: 'https://archidekt.com/decks/5264217/masochistic_minotaurs' },
+    { id: 5, title: 'Geralf', description: 'This is the fifth card.', imageUrl: geralf, linkUrl: 'https://archidekt.com/decks/7822160/geralf_needs_his_cereal' },
+    { id: 6, title: 'Gishath', description: 'This is the sixth card.', imageUrl: gishath, linkUrl: 'https://archidekt.com/decks/7118593/phillips_dinosour' },
+    { id: 7, title: 'Grenzo', description: 'This is the seventh card.', imageUrl: grenzo, linkUrl: 'https://archidekt.com/decks/6012940/grenzo_christmas_warden' },
+    { id: 8, title: 'Horde', description: 'This is the eight card.', imageUrl: horde, linkUrl: 'https://archidekt.com/decks/5264226/gaslight_gatekeep_girlboss' },
+    { id: 9, title: 'Meren', description: 'This is the ninth card.', imageUrl: meren, linkUrl: 'https://archidekt.com/decks/5264206/die_another_day' },
+    { id: 10, title: 'Okaun and Zndrsplt', description: 'This is the tenth card.', imageUrl: okaun, linkUrl: 'https://archidekt.com/decks/5724722/heads_i_win_tails_you_lose' },
+    { id: 11, title: 'Rin and Seri', description: 'This is the eleventh card.', imageUrl: rinseri, linkUrl: 'https://archidekt.com/decks/5288599/its_raining_these_guys' }
     // Add more cards as needed
   ];
 // Custom Next Arrow
-const NextArrow = ({ className, style, onClick }) => (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: 'block',
-        background: 'black',
-        width: '50px',
-        height: '50px',
-        borderRadius: '50%',
-        position: 'absolute',
-        right: '25px',
-        zIndex: 1,
-        cursor: 'pointer',
-        textAlign: 'center',
-        lineHeight: '50px',
-      }}
-      onClick={onClick}
-    />
+const NextArrow = ({onClick }) => (
+    <button onClick={onClick} >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 my-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+    </button>
   );
-  
   // Custom Prev Arrow
-  const PrevArrow = ({ className, style, onClick }) => (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: 'block',
-        background: 'black',
-        width: '50px',
-        height: '50px',
-        borderRadius: '50%',
-        position: 'absolute',
-        left: '25px',
-        zIndex: 1,
-        cursor: 'pointer',
-        textAlign: 'center',
-        lineHeight: '50px',
-      }}
-      onClick={onClick}
-    />
+  const PrevArrow = ({onClick }) => (
+    <button onClick={onClick} className="mr-4">
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
   );
   
   const settings = {
@@ -120,7 +93,7 @@ const NextArrow = ({ className, style, onClick }) => (
   };
 
   return (
-    <div className="min-h-screen m-3 p-3">
+    <div className="container mx-auto mb-8 mt-8">
       <Slider {...settings}>
         {cards.map(card => (
           <TiltCard key={card.id} title={card.title} description={card.description} imageUrl={card.imageUrl} linkUrl={card.linkUrl} />

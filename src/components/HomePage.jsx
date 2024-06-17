@@ -2,11 +2,11 @@ import React from 'react';
 import Typewriter from './Typewriter';
 import CardCarousel from './CardCarousel';
 import SkillSection from './SkillSection';
-import graphs from '../Images/Graphs.png';
-import spf from '../Images/7point5.png';
-import twitcheck from '../Images/Twitcheck.png';
-import portfolio from '../Images/Portfolio.png';
-import terminal from '../Images/Terminal.png';
+import graphs from '../Images/LogoImages/Graphs.png';
+import spf from '../Images/LogoImages/7point5.png';
+import twitcheck from '../Images/LogoImages/Twitcheck.png';
+import portfolio from '../Images/LogoImages/Portfolio.png';
+import terminal from '../Images/LogoImages/Terminal.png';
 import '../index.css';
 
 

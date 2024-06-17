@@ -1,32 +1,37 @@
 import React from 'react';
-import reactLogo from '../Images/ReactLogo.png';
-import tailwindLogo from '../Images/TailwindLogo.png'
-import bootstrapLogo from '../Images/BootstrapLogo.png'
-import jsLogo from '../Images/JavascriptLogo.webp'
-import htmlLogo from '../Images/HtmlLogo.png'
-import cssLogo from '../Images/CssLogo.svg'
-import nodeLogo from '../Images/NodejsLogo.png'
-import expressLogo from '../Images/ExpressLogo.png'
-import psqlLogo from '../Images/PostgresLogo.png'
-import pythonLogo from '../Images/PythonLogo.png'
-import javaLogo from '../Images/JavaLogo.png'
-import flaskLogo from '../Images/FlaskLogo.png'
-import djangoLogo from '../Images/DjangoLogo.png'
-import mongoLogo from '../Images/MongodbLogo.png'
-import cLogo from '../Images/CLogo.png'
-import qgisLogo from '../Images/QgisLogo.png'
-import arcLogo from '../Images/ArcgisLogo.png'
-import sqlLogo from '../Images/SqlLogo.png'
-import dockerLogo from '../Images/DockerLogo.png'
-import awsLogo from '../Images/AwsLogo.png'
-import sqliteLogo from '../Images/SqliteLogo.webp'
-import csharpLogo from '../Images/CsharpLogo.png'
-import cppLogo from '../Images/CppLogo.png'
+import reactLogo from '../Images/LogoImages/ReactLogo.png';
+import tailwindLogo from '../Images/LogoImages/TailwindLogo.png'
+import bootstrapLogo from '../Images/LogoImages/BootstrapLogo.png'
+import jsLogo from '../Images/LogoImages/JavascriptLogo.webp'
+import htmlLogo from '../Images/LogoImages/HtmlLogo.png'
+import cssLogo from '../Images/LogoImages/CssLogo.svg'
+import nodeLogo from '../Images/LogoImages/NodejsLogo.png'
+import expressLogo from '../Images/LogoImages/ExpressLogo.png'
+import psqlLogo from '../Images/LogoImages/PostgresLogo.png'
+import pythonLogo from '../Images/LogoImages/PythonLogo.png'
+import javaLogo from '../Images/LogoImages/JavaLogo.png'
+import flaskLogo from '../Images/LogoImages/FlaskLogo.png'
+import djangoLogo from '../Images/LogoImages/DjangoLogo.png'
+import mongoLogo from '../Images/LogoImages/MongodbLogo.png'
+import cLogo from '../Images/LogoImages/CLogo.png'
+import qgisLogo from '../Images/LogoImages/QgisLogo.png'
+import arcLogo from '../Images/LogoImages/ArcgisLogo.png'
+import sqlLogo from '../Images/LogoImages/SqlLogo.png'
+import dockerLogo from '../Images/LogoImages/DockerLogo.png'
+import awsLogo from '../Images/LogoImages/AwsLogo.png'
+import sqliteLogo from '../Images/LogoImages/SqliteLogo.webp'
+import csharpLogo from '../Images/LogoImages/CsharpLogo.png'
+import cppLogo from '../Images/LogoImages/CppLogo.png'
+import uvicLogo from '../Images/LogoImages/UVIC.png'
 
 const SkillSection = () => {
   return (
     <div className="bg-white text-black font-mono py-12">
       <div className="container mx-auto px-4">
+      <Category title=" ">
+          <Technology name="BSc Computer Science" image={uvicLogo} />
+        </Category>
+
         <Category title="Programming Languages">
           <Technology name="Python" proficiency={100} image={pythonLogo} />
           <Technology name="JavaScript" proficiency={90} image={jsLogo} />
@@ -85,8 +90,10 @@ const getColor = (proficiency) => {
     return 'bg-yellow-500';
   } else if (proficiency >= 50) {
     return 'bg-orange-500';
-  } else {
+  } else if(proficiency >= 10) {
     return 'bg-red-500';
+  } else {
+    return 'bg-white-500';
   }
 };
 
