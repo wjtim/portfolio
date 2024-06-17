@@ -20,39 +20,47 @@ import sqlLogo from '../Images/SqlLogo.png'
 import dockerLogo from '../Images/DockerLogo.png'
 import awsLogo from '../Images/AwsLogo.png'
 import sqliteLogo from '../Images/SqliteLogo.webp'
+import csharpLogo from '../Images/CsharpLogo.png'
+import cppLogo from '../Images/CppLogo.png'
 
 const SkillSection = () => {
   return (
     <div className="bg-white text-black font-mono py-12">
       <div className="container mx-auto px-4">
-        <Category title="Frontend">
+        <Category title="Programming Languages">
+          <Technology name="Python" proficiency={100} image={pythonLogo} />
+          <Technology name="JavaScript" proficiency={90} image={jsLogo} />
+          <Technology name="Java" proficiency={75} image={javaLogo} />
+          <Technology name="C" proficiency={75} image={cLogo} />
+          <Technology name="C#" proficiency={70} image={csharpLogo} />
+          <Technology name="C++" proficiency={65} image={cppLogo} />
+        </Category>
+        
+        <Category title="The Web">  
+          <Technology name="HTML5" proficiency={100} image={htmlLogo} />
+          <Technology name="CSS3" proficiency={100} image={cssLogo} />
           <Technology name="React" proficiency={90} image={reactLogo} />
           <Technology name="Tailwind CSS" proficiency={90} image={tailwindLogo} />
           <Technology name="Bootstrap" proficiency={90} image={bootstrapLogo} />
-          <Technology name="JavaScript" proficiency={90} image={jsLogo} />
-          <Technology name="HTML5" proficiency={95} image={htmlLogo} />
-          <Technology name="CSS3" proficiency={85} image={cssLogo} />
-          <Technology name="Django" proficiency={60} image={djangoLogo} />
-        </Category>
-        
-        <Category title="Backend">  
           <Technology name="Node.js" proficiency={90} image={nodeLogo} />
           <Technology name="Express.js" proficiency={90} image={expressLogo} />
-          <Technology name="PostgreSQL" proficiency={90} image={psqlLogo} />
-          <Technology name="SQLite" proficiency={90} image={sqliteLogo} />
-          <Technology name="MongoDB" proficiency={60} image={mongoLogo} />
-          <Technology name="Python" proficiency={100} image={pythonLogo} />
-          <Technology name="Flask" proficiency={60} image={flaskLogo} />
-          <Technology name="Java" proficiency={60} image={javaLogo} />
+          <Technology name="AWS" proficiency={80} image={awsLogo} />
+          <Technology name="Django" proficiency={75} image={djangoLogo} />
+          <Technology name="Flask" proficiency={75} image={flaskLogo} />
+
         </Category>
         
-        <Category title="Other">
-          <Technology name="C" proficiency={60} image={cLogo} />
-          <Technology name="SQL" proficiency={60} image={sqlLogo} />
-          <Technology name="AWS" proficiency={60} image={awsLogo} />
-          <Technology name="Docker" proficiency={60} image={dockerLogo} />
-          <Technology name="QGIS" proficiency={60} image={qgisLogo} />
-          <Technology name="ArcGIS" proficiency={60} image={arcLogo} />
+        <Category title="Databases">
+          <Technology name="SQL" proficiency={100} image={sqlLogo} />
+          <Technology name="PostgreSQL" proficiency={100} image={psqlLogo} />
+          <Technology name="SQLite" proficiency={90} image={sqliteLogo} />
+          <Technology name="MongoDB" proficiency={75} image={mongoLogo} />
+        </Category>
+
+        <Category title="And More">
+          <Technology name="Docker" proficiency={75} image={dockerLogo} />
+          <Technology name="QGIS" proficiency={70} image={qgisLogo} />
+          <Technology name="ArcGIS" proficiency={70} image={arcLogo} />
         </Category>
       </div>
     </div>

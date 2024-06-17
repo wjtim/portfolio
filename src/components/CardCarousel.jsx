@@ -40,7 +40,7 @@ const CardCarousel = ({ cards }) => {
     <div className="flex flex-col items-center">
       <div className="flex overflow-hidden">
         {cards.slice(currentSlide * cardsPerSlide, currentSlide * cardsPerSlide + cardsPerSlide).map((card, index) => (
-        <a key={index} href={card.link} className="card-link">
+        <a key={index} href={card.link} className="card-link" rel="noreferrer" target="_blank">
           <div className="card-container bg-white shadow-md rounded-lg p-4 m-2">
             <img src={card.image} alt={card.title} className="card-image" />
             <div className="card-content">
