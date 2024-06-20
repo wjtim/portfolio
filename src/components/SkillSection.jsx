@@ -23,7 +23,44 @@ import sqliteLogo from '../Images/LogoImages/SqliteLogo.webp'
 import csharpLogo from '../Images/LogoImages/CsharpLogo.png'
 import cppLogo from '../Images/LogoImages/CppLogo.png'
 import uvicLogo from '../Images/LogoImages/UVIC.png'
+import ellipsis from '../Images/LogoImages/ellipsis.png'
 
+const Category = ({ title, children }) => {
+  return (
+    <div className="mb-8">
+      <h3 className="text-2xl mb-4">{title}</h3>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-8">
+        {children}
+      </div>
+    </div>
+  );
+};
+
+const getColor = (proficiency) => {
+  if (proficiency >= 75) {
+    return 'bg-green-500';
+  } else if (proficiency >= 60) {
+    return 'bg-yellow-500';
+  } else if (proficiency >= 50) {
+    return 'bg-orange-500';
+  } else if(proficiency >= 10) {
+    return 'bg-red-500';
+  } else {
+    return 'bg-white-500';
+  }
+};
+
+const Technology = ({ name, proficiency, image }) => {
+  return (
+    <div className="flex flex-col items-center p-4 border rounded-lg w-36 h-36 transform transition-transform duration-300 hover:translate-y-[-10px]">
+      <img src={image} alt={`${name} icon`} className="w-16 h-16 mb-2" />
+      <p className="text-center mb-2 text-sm">{name}</p>
+      <div className="w-full bg-gray-200 rounded-full h-2">
+        <div className={`${getColor(proficiency)} h-2 rounded-full`} style={{ width: `${proficiency}%` }}></div>
+      </div>
+    </div>
+  );
+};
 const SkillSection = () => {
   return (
     <div className="bg-white text-black font-mono py-12">
@@ -62,48 +99,12 @@ const SkillSection = () => {
           <Technology name="MongoDB" proficiency={75} image={mongoLogo} />
         </Category>
 
-        <Category title="And More">
+        <Category title="Misc.">
           <Technology name="Docker" proficiency={75} image={dockerLogo} />
           <Technology name="QGIS" proficiency={70} image={qgisLogo} />
           <Technology name="ArcGIS" proficiency={70} image={arcLogo} />
+          <Technology name="And more!" image={ellipsis} />
         </Category>
-      </div>
-    </div>
-  );
-};
-
-const Category = ({ title, children }) => {
-  return (
-    <div className="mb-8">
-      <h3 className="text-2xl mb-4">{title}</h3>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-8">
-        {children}
-      </div>
-    </div>
-  );
-};
-
-const getColor = (proficiency) => {
-  if (proficiency >= 75) {
-    return 'bg-green-500';
-  } else if (proficiency >= 60) {
-    return 'bg-yellow-500';
-  } else if (proficiency >= 50) {
-    return 'bg-orange-500';
-  } else if(proficiency >= 10) {
-    return 'bg-red-500';
-  } else {
-    return 'bg-white-500';
-  }
-};
-
-const Technology = ({ name, proficiency, image }) => {
-  return (
-    <div className="flex flex-col items-center p-4 border rounded-lg w-36 h-36 transform transition-transform duration-300 hover:translate-y-[-10px]">
-      <img src={image} alt={`${name} icon`} className="w-16 h-16 mb-2" />
-      <p className="text-center mb-2 text-sm">{name}</p>
-      <div className="w-full bg-gray-200 rounded-full h-2">
-        <div className={`${getColor(proficiency)} h-2 rounded-full`} style={{ width: `${proficiency}%` }}></div>
       </div>
     </div>
   );

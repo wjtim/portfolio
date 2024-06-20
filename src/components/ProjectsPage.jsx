@@ -1,17 +1,26 @@
 import React from 'react'
 import spfDetail from '../Images/ProjectImages/7point5Details.png'
 import twitchDetails from '../Images/ProjectImages/TwitcheckDetails.png'
-const ProjectsPage = () => {
-    const Project = ({ name, description, image, skills }) => {
-        return (
-          <div className="flex flex-col items-right my-3 p-4 border rounded-lg w-144 h-144 transform transition-transform duration-300 hover:translate-y-[-5px]">
-            <p className="text-2xl font-mono pr-1 my-3 mx-3">{name}</p>
-            <p className="text-left font-mono mb-3 mx-3 my-3 text-sm">{description}</p>
-            <img src={image} alt={`${name} icon`} className="w-144 h-144 mb-2" />
-          </div>
-        );
-      };
+import algoDetails from '../Images/LogoImages/Graphs.png'
+import terminalDetails from '../Images/LogoImages/Terminal.png'
 
+const Project = ({ name, description, image}) => {
+  return (
+    <div className="container mx-auto my-3 p-4 border rounded-lg w-full transform transition-transform duration-300 hover:translate-y-[-5px]">
+    <div className="flex flex-col md:flex-row items-start md:space-x-4">
+      <div className="max-w-2xl mt-4 text-center">
+        <p className='text-2xl font-mono my-2'>{name}</p>
+        <p className='font-mono my-2'>{description}</p>
+      </div>
+      <div className="w-full md:w-2/3 mt-4 md:mt-0 flex flex-col">
+       <img src={image} alt="Sorting Algorithm GIF" className="rounded shadow-md" />
+      </div>
+    </div>
+  </div>
+  );
+};
+
+const ProjectsPage = () => {
   return (
     <div>
     <div className="text-2xl font-mono pr-1 my-5 mx-3"> {"> About My Projects:"} </div>
@@ -31,17 +40,15 @@ const ProjectsPage = () => {
     />
     <Project 
     name="Algorithms"
-    image=""
-    description="A small django application made to test out using other API's. In this case, the Twitch API.
-    Simply put in the name of a streamer, and depending on whether they are online will either play their current livestream for you,
-    or let you know that they are offline."
+    image={algoDetails}
+    description="This was an excercise to practice a few skills. I wanted to do something that would allow me to reuse my knowledge of data
+    structures and algorithms as well as have a chance to create outputs using Python and Matplotlib."
     />
     <Project 
     name="The Terminal"
-    image=""
-    description="A small django application made to test out using other API's. In this case, the Twitch API.
-    Simply put in the name of a streamer, and depending on whether they are online will either play their current livestream for you,
-    or let you know that they are offline."
+    image={terminalDetails}
+    description="Once I saw the react-console-emulator library, given the terminal theming of this site, I knew I wanted to create a 
+    fun interactive experience where I could hide easter eggs and give a trivial command line experience in a fun environment on this site."
     />
     </div>
   )
