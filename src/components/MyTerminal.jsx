@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import Terminal from 'react-console-emulator'
-
+import { AtogList, BreyaList, ChulaneList, FiresongList, GeralfList,
+        GishathList, GrenzoList, HordeList, MerenList, OkaunList, RinSeriList } from '../components/Decklists'
 
 const MyTerminal = () => {
   const fileSystem = {
@@ -173,8 +174,38 @@ const MyTerminal = () => {
         </ul>
         }else if(child && args === "algorithms.li"){
           return <ul className='list-none'>
-          <li className='text-yellow-500'>{"Bachelor of Computer Science - UVic"}</li>
+          <li >{"_____________________________"}</li>
+          <li >{"Bellman-Ford - Graph - O(V*E)"}</li>
+          <li >{"Dijkstra - Graph - O(ElogV)"}</li>
+          <li >{"Bubble Sort - Sorting - O(n^2)"}</li>
+          <li >{"Insertion Sort - Sorting - O(n^2)"}</li>
+          <li >{"Selection Sort - Sorting - O(n^2)"}</li>
+          <li >{"Heap Sort - Sorting - O(nlogn"}</li>
+          <li >{"Quick Sort - Sorting - O(nlogn)"}</li>
+          <li >{"_____________________________"}</li>
         </ul>
+        }else if(child && args === "Atog.li"){
+          return <AtogList />
+        }else if(child && args === "Breya.li"){
+          return <BreyaList />
+        }else if(child && args === "Chulane.li"){
+          return <ChulaneList />
+        }else if(child && args === "Firesong.li"){
+          return <FiresongList />
+        }else if(child && args === "Geralf.li"){
+          return <GeralfList />
+        }else if(child && args === "Gishath.li"){
+          return <GishathList />
+        }else if(child && args === "Grenzo.li"){
+          return <GrenzoList />
+        }else if(child && args === "Horde.li"){
+          return <HordeList />
+        }else if(child && args === "Meren.li"){
+          return <MerenList />
+        }else if(child && args === "Okaun.li"){
+          return <OkaunList />
+        }else if(child && args === "Rinseri.li"){
+          return <RinSeriList />
         }
         else{
           return "File '" + args + "' not found"
