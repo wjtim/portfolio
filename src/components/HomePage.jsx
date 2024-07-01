@@ -29,31 +29,31 @@ function HomePage() {
   const cards = [
     {
       title: '7point5.club',
-      description: 'A password protected secret club site made for a cool group.',
+      description: 'A password protected secret club site. This is a full stack project using PERN.',
       image: spf,
       link: "http://7point5.club"
     },
     {
       title: 'Twitcheck',
-      description: 'A small application made to check if a streamer is live on twitch',
+      description: 'A small application made with Django to check if a streamer is live on twitch',
       image: twitcheck,
       link: "https://twitcheck.wjtim.com"
     },
     {
       title: 'Algorithm Animations',
-      description: 'Had to make something tangible with my DSA knowledge ',
+      description: 'To flex my DSA muscle and keep it sharp. I made visualisations using Python`s Matplotlib',
       image: graphs,
       link: "/animations"
     },
     {
       title: 'The Terminal',
-      description: 'A terminal emualator that can be used in the browser!',
+      description: 'A terminal emulator made as a fun way to practice using React hooks and refs as well as trees.',
       image: terminal,
       link: "/terminal"
     },
     {
       title: 'This Site!',
-      description: 'A portfolio site designed to show a bit about me and my projects',
+      description: 'A React portfolio site designed to show a bit about me and my projects',
       image: portfolio,
       link: "/"
     }
