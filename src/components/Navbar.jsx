@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='shadow-md p-2'>
+    <div className='shadow-md min-w-full p-2'>
       <ul className="justify-between mx-3 flex">
         <li className="mr-6 text-xl">
             <a className="hover:text-orange-500" href='/'><strong>WJTIM</strong></a>

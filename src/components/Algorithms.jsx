@@ -15,7 +15,7 @@ require("prismjs/plugins/normalize-whitespace/prism-normalize-whitespace");
 const Algorithm = ({ name, description, image, code}) => {
     let descFormatted = description.replace(/\\n/g, `\n`);
     return (
-        <div className="container mx-auto p-4 border rounded-lg w-full transform transition-transform duration-300 hover:translate-y-[-5px]">
+        <div className="container mx-auto p-4 border rounded-lg w-full transform overflow-x-hidden transition-transform duration-300 hover:translate-y-[-5px]">
         <div className="flex flex-col md:flex-row items-start md:space-x-4">
           <div className="mt-4 text-center">
             <p className='text-2xl font-mono my-2'>{name}</p>
