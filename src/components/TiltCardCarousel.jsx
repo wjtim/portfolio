@@ -29,7 +29,6 @@ const TiltCardCarousel = () => {
     { id: 9, title: 'Meren', description: 'This is the ninth card.', imageUrl: meren, linkUrl: 'https://archidekt.com/decks/5264206/die_another_day' },
     { id: 10, title: 'Okaun and Zndrsplt', description: 'This is the tenth card.', imageUrl: okaun, linkUrl: 'https://archidekt.com/decks/5724722/heads_i_win_tails_you_lose' },
     { id: 11, title: 'Rin and Seri', description: 'This is the eleventh card.', imageUrl: rinseri, linkUrl: 'https://archidekt.com/decks/5288599/its_raining_these_guys' }
-    // Add more cards as needed
   ];
 // Custom Next Arrow
 const NextArrow = ({onClick }) => (

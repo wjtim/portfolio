@@ -13,7 +13,7 @@ import '../index.css';
 
 function HomePage() {
   const sentences = [
-    "Welcome to my site!",
+    "Welcome to my site.",
     "I'm a developer.",
     "I love creating with Javascript and Python.",
     "I'm constantly striving to improve."
