@@ -37,7 +37,7 @@ function HomePage() {
       title: 'Twitcheck',
       description: 'A small application made with Django to check if a streamer is live on twitch',
       image: twitcheck,
-      link: "https://twitcheck.wjtim.com"
+      link: "https://twitcheck.fly.dev"
     },
     {
       title: 'Algorithm Animations',
