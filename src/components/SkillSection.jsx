@@ -24,6 +24,7 @@ import csharpLogo from '../Images/LogoImages/CsharpLogo.png'
 import cppLogo from '../Images/LogoImages/CppLogo.png'
 import uvicLogo from '../Images/LogoImages/UVIC.png'
 import ellipsis from '../Images/LogoImages/ellipsis.png'
+import firebaseLogo from '../Images/LogoImages/Firebase.png'
 
 const Category = ({ title, children }) => {
   return (
@@ -87,6 +88,7 @@ const SkillSection = () => {
           <Technology name="Node.js" proficiency={90} image={nodeLogo} />
           <Technology name="Express.js" proficiency={90} image={expressLogo} />
           <Technology name="AWS" proficiency={80} image={awsLogo} />
+          <Technology name="Firebase" proficiency={80} image={firebaseLogo} />
           <Technology name="Django" proficiency={75} image={djangoLogo} />
           <Technology name="Flask" proficiency={75} image={flaskLogo} />
 

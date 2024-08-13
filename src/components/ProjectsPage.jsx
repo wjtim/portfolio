@@ -3,6 +3,7 @@ import spfDetail from '../Images/ProjectImages/7point5Details.png'
 import twitchDetails from '../Images/ProjectImages/TwitcheckDetails.png'
 import algoDetails from '../Images/LogoImages/Graphs.png'
 import terminalDetails from '../Images/LogoImages/Terminal.png'
+import highlanderDetails from '../Images/ProjectImages/HighlanderDetails.png'
 
 const Project = ({ name, description, image}) => {
   return (
@@ -24,6 +25,13 @@ const ProjectsPage = () => {
   return (
     <div>
     <div className="text-2xl font-mono pr-1 my-5 mx-3"> {"> About My Projects:"} </div>
+    <Project 
+    name="WJTIM Highlander"
+    image={highlanderDetails}
+    description="I wanted to try my hand with real time interaction, as well as creating a game, and dabbling in noSQL. This project was a 
+    perfect mix of all 3. WJTIM Highlander is a simple game where the most current name input is added to a firestore database, then the time 
+    it was recorded is monitored with a timer. Whenever a name is replaced if it was in the top 5 longest times before it was replaced it gets added to a leaderboard.
+    This is definitely my most interactive project and for sure one of the most fun to have live."/>
     <Project 
     name="7point5" 
     image={spfDetail}

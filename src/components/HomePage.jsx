@@ -7,6 +7,7 @@ import spf from '../Images/LogoImages/7point5.png';
 import twitcheck from '../Images/LogoImages/Twitcheck.png';
 import portfolio from '../Images/LogoImages/Portfolio.png';
 import terminal from '../Images/LogoImages/Terminal.png';
+import highlander from '../Images/ProjectImages/HighlanderDetails.png'
 import '../index.css';
 
 
@@ -27,6 +28,12 @@ function HomePage() {
     'improve': 'text-orange-500'
   };
   const cards = [
+    {
+      title:"Highlander",
+      description:"Can you hold the crown? A real time king of the hill game made with firebase",
+      image: highlander,
+      link:"https://highlander.wjtim.com"
+    },
     {
       title: '7point5.club',
       description: 'A password protected secret club site. This is a full stack project using PERN.',
