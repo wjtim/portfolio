@@ -7,6 +7,7 @@ import MyTerminal from './components/MyTerminal';
 import AboutMe from './components/AboutMe';
 import ProjectsPage from './components/ProjectsPage';
 import Algorithms from './components/Algorithms';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="*" element={"Not Found"} />
       </Route>
     </Routes>
+    <Footer />
   </BrowserRouter>
   );
 }
