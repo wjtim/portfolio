@@ -17,41 +17,22 @@ import fourteenth from '../Images/ActivityImages/FD240375-325D-45CA-A902-D389A69
 import fifteenth from '../Images/ActivityImages/FEF979ED-5331-4DCF-B606-6467A5DA34A4.jpeg'
 
 const ActivityCarousel = () => {
-    const NextArrow = ({onClick }) => (
-        <button onClick={onClick} >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 my-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-        </button>
-      );
-      
-      // Custom Prev Arrow
-      const PrevArrow = ({onClick }) => (
-        <button onClick={onClick} className="mr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-      );
-
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
+        accessibility: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        cssEase: "ease",
         responsive: [
             {
               breakpoint: 1024,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-                nextArrow: <NextArrow />,
-                prevArrow: <PrevArrow />
               }
             },
             {
@@ -59,8 +40,6 @@ const ActivityCarousel = () => {
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                nextArrow: <NextArrow />,
-                prevArrow: <PrevArrow />
               }
             },
             {
@@ -70,8 +49,6 @@ const ActivityCarousel = () => {
                 centerMode: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                nextArrow: <NextArrow />,
-                prevArrow: <PrevArrow />
               }
             }
           ]

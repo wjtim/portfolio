@@ -30,65 +30,42 @@ const TiltCardCarousel = () => {
     { id: 10, title: 'Okaun and Zndrsplt', description: 'This is the tenth card.', imageUrl: okaun, linkUrl: 'https://archidekt.com/decks/5724722/heads_i_win_tails_you_lose' },
     { id: 11, title: 'Rin and Seri', description: 'This is the eleventh card.', imageUrl: rinseri, linkUrl: 'https://archidekt.com/decks/5288599/its_raining_these_guys' }
   ];
-// Custom Next Arrow
-const NextArrow = ({onClick }) => (
-    <button onClick={onClick} >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 my-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-    </button>
-  );
-  // Custom Prev Arrow
-  const PrevArrow = ({onClick }) => (
-    <button onClick={onClick} className="mr-4">
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-    </svg>
-  </button>
-  );
   
   const settings = {
     dots: true,
     infinite: true,
-    adaptiveHeight: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "ease",
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          nextArrow: <NextArrow />,
-          prevArrow: <PrevArrow />
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            className: "center",
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          nextArrow: <NextArrow />,
-          prevArrow: <PrevArrow />
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          className: "center",
-          centerMode: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          nextArrow: <NextArrow />,
-          prevArrow: <PrevArrow />
-        }
-      }
-    ]
+      ]
   };
 
   return (
