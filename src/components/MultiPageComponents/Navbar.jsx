@@ -15,7 +15,7 @@ const Navbar = () => {
                 <a className="hover:text-orange-500" href='/projects'>projects</a>
             </li>
             <li className="mr-6 text-lg">
-                <a className="hover:text-orange-500" href='/animations'>algos</a>
+                <a className="hover:text-orange-500" href='/stats'>stats</a>
             </li>
             <li className="mr-6 text-lg">
                 <a className="hover:text-orange-500" href='/terminal'>cmd</a>

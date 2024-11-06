@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import Terminal from 'react-console-emulator'
 import { AtogList, BreyaList, ChulaneList, FiresongList, GeralfList,
-        GishathList, GrenzoList, HordeList, MerenList, OkaunList, RinSeriList } from '../components/Decklists'
+        GishathList, GrenzoList, HordeList, MerenList, OkaunList, RinSeriList } from '../TerminalComponents/Decklists'
 
 const MyTerminal = () => {
   const fileSystem = {

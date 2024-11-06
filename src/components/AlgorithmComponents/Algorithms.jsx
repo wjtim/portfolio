@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import Prism from 'prismjs'
 import "prismjs/themes/prism-tomorrow.min.css"
-import bellmanFord from '../Images/Algorithms/BellmanFord.gif'
-import dijkstra from '../Images/Algorithms/Dijkstra.gif'
-import bubbleSort from '../Images/Algorithms/bubble_sort_animation.gif'
-import heapSort from '../Images/Algorithms/heap_sort_animation.gif'
-import insertionSort from '../Images/Algorithms/insertion_sort_animation.gif'
-import quickSort from '../Images/Algorithms/quicksort_animation.gif'
-import selectionSort from '../Images/Algorithms/selection_sort_animation.gif'
+import bellmanFord from '../../Images/Algorithms/BellmanFord.gif'
+import dijkstra from '../../Images/Algorithms/Dijkstra.gif'
+import bubbleSort from '../../Images/Algorithms/bubble_sort_animation.gif'
+import heapSort from '../../Images/Algorithms/heap_sort_animation.gif'
+import insertionSort from '../../Images/Algorithms/insertion_sort_animation.gif'
+import quickSort from '../../Images/Algorithms/quicksort_animation.gif'
+import selectionSort from '../../Images/Algorithms/selection_sort_animation.gif'
 
 require("prismjs/components/prism-python");
 require("prismjs/plugins/normalize-whitespace/prism-normalize-whitespace");

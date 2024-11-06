@@ -4,17 +4,17 @@ import Slider from 'react-slick';
 import TiltCard from './TiltCard';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import atog from '../Images/MTGImages/Atogatog (11fzjRsfGOBOYBOQ_Wubb_vmLZG2eGWE8).png'
-import breya from '../Images/MTGImages/Breya, Etherium Shaper (NormalPlus Clint Cearley) (1Hc0vD-nGBSbL13-0U4VGzoZumCBKJ75k).jpg'
-import chulane from '../Images/MTGImages/Chulane, Teller of Tales (Victor Adame Minguez) (1oQBImxvZ8Lx1kCTPYMZRfeRUPzTtdkOk).jpg'
-import firesong from '../Images/MTGImages/Firesong and Sunspeaker (1wfzy-Jd-VxB8uTRLod2x8PPqLfyQ7q11).png'
-import geralf from '../Images/MTGImages/Geralf, the Fleshwright (1p-IbTjHV1uDUNC35IoJTDkcOAObMZ0fB).png'
-import gishath from "../Images/MTGImages/Gishath, Sun's Avatar (Normal) [LCI] {229} (1HGcOxbxxPiHpHuc8brkfDbhxtnurC9Zt).jpg"
-import grenzo from '../Images/MTGImages/Grenzo, Dungeon Warden (1hOUjYt0XQSOyZXKIa05LBejK-hL5xb_X).png'
-import horde from '../Images/MTGImages/Horde of Notions (12pUT74o0gY28IpW77qbBrmIxVaGYVo90).png'
-import meren from '../Images/MTGImages/Meren of Clan Nel Toth (NormalPlus Mark Winters) (1K8_Mf778l7mHw_dZNm4tEWQRRI1jgr57).jpg'
-import okaun from '../Images/MTGImages/Okaun, Eye of Chaos (sld1) (1LpubdYNqCqN3XYyZzMKQ00wTGp3vfHuk).png'
-import rinseri from '../Images/MTGImages/Rin and Seri, Inseparable (1JdYFCG7fFo7NBzYXbvPN0PJLNT-3d0J-).png'
+import atog from '../../Images/MTGImages/Atogatog (11fzjRsfGOBOYBOQ_Wubb_vmLZG2eGWE8).png'
+import breya from '../../Images/MTGImages/Breya, Etherium Shaper (NormalPlus Clint Cearley) (1Hc0vD-nGBSbL13-0U4VGzoZumCBKJ75k).jpg'
+import chulane from '../../Images/MTGImages/Chulane, Teller of Tales (Victor Adame Minguez) (1oQBImxvZ8Lx1kCTPYMZRfeRUPzTtdkOk).jpg'
+import firesong from '../../Images/MTGImages/Firesong and Sunspeaker (1wfzy-Jd-VxB8uTRLod2x8PPqLfyQ7q11).png'
+import geralf from '../../Images/MTGImages/Geralf, the Fleshwright (1p-IbTjHV1uDUNC35IoJTDkcOAObMZ0fB).png'
+import gishath from "../../Images/MTGImages/Gishath, Sun's Avatar (Normal) [LCI] {229} (1HGcOxbxxPiHpHuc8brkfDbhxtnurC9Zt).jpg"
+import grenzo from '../../Images/MTGImages/Grenzo, Dungeon Warden (1hOUjYt0XQSOyZXKIa05LBejK-hL5xb_X).png'
+import horde from '../../Images/MTGImages/Horde of Notions (12pUT74o0gY28IpW77qbBrmIxVaGYVo90).png'
+import meren from '../../Images/MTGImages/Meren of Clan Nel Toth (NormalPlus Mark Winters) (1K8_Mf778l7mHw_dZNm4tEWQRRI1jgr57).jpg'
+import okaun from '../../Images/MTGImages/Okaun, Eye of Chaos (sld1) (1LpubdYNqCqN3XYyZzMKQ00wTGp3vfHuk).png'
+import rinseri from '../../Images/MTGImages/Rin and Seri, Inseparable (1JdYFCG7fFo7NBzYXbvPN0PJLNT-3d0J-).png'
 
 const TiltCardCarousel = () => {
   const cards = [

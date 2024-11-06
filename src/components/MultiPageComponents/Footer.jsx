@@ -1,7 +1,7 @@
 import React from 'react'
-import githubLogo from '../Images/LogoImages/githubLogo.png'
-import mailLogo from '../Images/LogoImages/MailLogo.png'
-import linkedInLogo from '../Images/LogoImages/LinkedInLogo.png'
+import githubLogo from '../../Images/LogoImages/githubLogo.png'
+import mailLogo from '../../Images/LogoImages/MailLogo.png'
+import linkedInLogo from '../../Images/LogoImages/LinkedInLogo.png'
 const Footer = () => {
   return (
     <div className='min-w-full p-2 my-5'>

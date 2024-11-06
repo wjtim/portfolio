@@ -1,14 +1,14 @@
 import React from 'react';
-import Typewriter from './Typewriter';
+import Typewriter from '../MultiPageComponents/Typewriter';
 import CardCarousel from './CardCarousel';
 import SkillSection from './SkillSection';
-import graphs from '../Images/LogoImages/Graphs.png';
-import spf from '../Images/LogoImages/7point5.png';
-import twitcheck from '../Images/LogoImages/Twitcheck.png';
-import portfolio from '../Images/LogoImages/Portfolio.png';
-import terminal from '../Images/LogoImages/Terminal.png';
-import highlander from '../Images/ProjectImages/HighlanderDetails.png'
-import '../index.css';
+import graphs from '../../Images/LogoImages/Graphs.png';
+import spf from '../../Images/LogoImages/7point5.png';
+import twitcheck from '../../Images/LogoImages/Twitcheck.png';
+import portfolio from '../../Images/LogoImages/Portfolio.png';
+import terminal from '../../Images/LogoImages/Terminal.png';
+import highlander from '../../Images/ProjectImages/HighlanderDetails.png'
+import '../../index.css';
 
 
 
@@ -17,7 +17,7 @@ function HomePage() {
     "Welcome to my site.",
     "I'm a developer.",
     "I love creating with Javascript and Python.",
-    "I'm constantly striving to improve."
+    "Let's get in touch!"
   ];
 
   const highlightWords = {
@@ -25,7 +25,8 @@ function HomePage() {
     'developer': 'text-orange-500',
     'javascript': 'text-yellow-500',
     'python': 'text-blue-500',
-    'improve': 'text-orange-500'
+    'in': 'text-orange-500',
+    'touch': 'text-orange-500'
   };
   const cards = [
     {
@@ -74,6 +75,7 @@ function HomePage() {
       <CardCarousel cards={cards}/>
       <div className="text-2xl font-mono pr-1 my-3 mx-3"> {"> I Know:"} </div>
       <SkillSection />
+      <div className="text-2xl font-mono pr-1 my-3 mx-3"> {"> Check the"} <a href="/stats" className="hover:text-orange-500">stats!</a> </div>
     </div>
   );
 }
