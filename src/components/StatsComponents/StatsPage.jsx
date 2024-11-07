@@ -13,7 +13,6 @@ const StatsPage = () => {
   useEffect(() => {
     const fetchLanguageData = async () => {
       try {
-        console.log("I'm trying this")
         const response = await fetch('/.netlify/functions/githubStats');
         if (!response.ok) throw new Error('Failed to fetch data from the server');
         

@@ -10,7 +10,7 @@ const projectsData = [
     name: "WJTIM Highlander",
     description: "I wanted to try my hand with real time interaction, as well as creating a game, and dabbling in noSQL. This project was a perfect mix of all 3. WJTIM Highlander is a simple game where the most current name input is added to a firestore database, then the time it was recorded is monitored with a timer. Whenever a name is replaced if it was in the top 5 longest times before it was replaced it gets added to a leaderboard.This is definitely my most interactive project and for sure one of the most fun to have live.",
     image: highlanderDetails,
-    technologies: ["React", "Firebase", "NoSQL"],
+    technologies: ["React", "Node", "Firebase", "NoSQL"],
     url: "https://highlander.wjtim.com/"
   },
   {
@@ -24,14 +24,14 @@ const projectsData = [
     name: "Twitcheck",
     description: "A small django application made to test out using other API's. In this case, the Twitch API. Simply put in the name of a streamer, and depending on whether they are online will either play their current livestream for you,or let you know that they are offline.",
     image: twitchDetails,
-    technologies: ["Django", "Twitch API"],
+    technologies: ["Django", "Python"],
     url: "https://twitcheck.fly.dev/"
   },
   {
     name: "Algorithms",
     description: "This was an excercise to practice a few skills. I wanted to do something that would allow me to reuse my knowledge of data structures and algorithms as well as have a chance to create outputs using Python and Matplotlib.",
     image: algoDetails,
-    technologies: ["Python", "Matplotlib"],
+    technologies: ["Python"],
     url: "https://wjtim.com/algorithms"
   },
   {
