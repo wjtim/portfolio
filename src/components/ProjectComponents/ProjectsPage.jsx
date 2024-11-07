@@ -10,14 +10,14 @@ const projectsData = [
     name: "WJTIM Highlander",
     description: "I wanted to try my hand with real time interaction, as well as creating a game, and dabbling in noSQL. This project was a perfect mix of all 3. WJTIM Highlander is a simple game where the most current name input is added to a firestore database, then the time it was recorded is monitored with a timer. Whenever a name is replaced if it was in the top 5 longest times before it was replaced it gets added to a leaderboard.This is definitely my most interactive project and for sure one of the most fun to have live.",
     image: highlanderDetails,
-    technologies: ["React", "Node", "Firebase", "NoSQL"],
+    technologies: ["React", "Node", "Firebase", "NoSQL", "JavaScript"],
     url: "https://highlander.wjtim.com/"
   },
   {
     name: "7point5",
     description: "A full stack web application made with PostgreSQL, Express, React, and Node. Thisweb application is a password protected site where events are reviewed using FormData which is digested by the back end, stored, then displayed on the site. It is hosted on an Amazon EC2 instance with image hosting done in an Amazon S3 Bucket. This project was my first full stack project and allowed me to experience tons of useful techniques from AWS Hosting, to JSON Web Tokens, Encryption and much more.",
     image: spfDetail,
-    technologies: ["PostgreSQL", "Express", "React", "Node", "AWS"],
+    technologies: ["PostgreSQL", "Express", "React", "Node", "AWS", "JavaScript"],
     url: "http://7point5.club/"
   },
   {
