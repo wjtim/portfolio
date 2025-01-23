@@ -75,7 +75,7 @@ const ProjectsPage = () => {
       <div className="text-2xl font-mono pr-1 my-5 mx-3">{"> About My Projects:"}</div>
       
       <div className="my-4 mx-3">
-        <label className="font-mono text-lg mr-2" htmlFor="techFilter">Filter by Technology</label>
+        <label className="text-2xl font-mono pr-1 my-5 mx-3" htmlFor="techFilter">Filter by Technology</label>
         <select 
           id="techFilter" 
           value={selectedTech} 

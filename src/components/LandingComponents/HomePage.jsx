@@ -14,15 +14,17 @@ import '../../index.css';
 
 function HomePage() {
   const sentences = [
-    "Welcome to my site.",
     "I'm a developer.",
-    "I love creating with Javascript and Python.",
+    "I'm a data professional.",
+    "I create with Javascript, Python, and more.",
     "Let's get in touch!"
   ];
 
   const highlightWords = {
     'site': 'text-orange-500',
     'developer': 'text-orange-500',
+    'data': 'text-blue-500',
+    'professional': 'text-blue-500',
     'javascript': 'text-yellow-500',
     'python': 'text-blue-500',
     'in': 'text-orange-500',
@@ -51,7 +53,7 @@ function HomePage() {
       title: 'Algorithm Animations',
       description: 'To flex my DSA muscle and keep it sharp. I made visualisations using Python`s Matplotlib',
       image: graphs,
-      link: "/animations"
+      link: "/algorithms"
     },
     {
       title: 'The Terminal',

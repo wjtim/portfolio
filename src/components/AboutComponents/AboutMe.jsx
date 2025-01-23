@@ -8,7 +8,7 @@ const AboutMe = () => {
   const sentences = [
     "I'm a BSc Computer Science Major from the University of Victoria." ,
     "I have a passion for development using Javascript, Python, and much more.",
-    "I also love analyzing data and creating data visualisations."
+    "I love analyzing data and creating data visualisations."
   ];
 
   const highlightWords = {
