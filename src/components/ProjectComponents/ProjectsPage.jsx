@@ -4,8 +4,16 @@ import twitchDetails from '../../Images/ProjectImages/TwitcheckDetails.png'
 import algoDetails from '../../Images/LogoImages/Graphs.png'
 import terminalDetails from '../../Images/LogoImages/Terminal.png'
 import highlanderDetails from '../../Images/ProjectImages/HighlanderDetails.png'
+import modernsenseDetails from '../../Images/ProjectImages/ModernSenseDetails.png'
 
 const projectsData = [
+  {
+    name: "ModernSense",
+    description: "A Python and Flask application that applies ML sentiment analysis models to user input data. The user can either manually enter a review and rating, or upload a batch of reviews and ratings via csv. The model will analyze the sentiment of the input review and determine whether it accurately matches the rating given. ",
+    image: modernsenseDetails,
+    technologies: ["Python", "Flask", "Machine Learning"],
+    url: "https://github.com/wjtim/modernSense"
+  },
   {
     name: "WJTIM Highlander",
     description: "I wanted to try my hand with real time interaction, as well as creating a game, and dabbling in noSQL. This project was a perfect mix of all 3. WJTIM Highlander is a simple game where the most current name input is added to a firestore database, then the time it was recorded is monitored with a timer. Whenever a name is replaced if it was in the top 5 longest times before it was replaced it gets added to a leaderboard.This is definitely my most interactive project and for sure one of the most fun to have live.",

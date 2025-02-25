@@ -8,6 +8,7 @@ import twitcheck from '../../Images/LogoImages/Twitcheck.png';
 import portfolio from '../../Images/LogoImages/Portfolio.png';
 import terminal from '../../Images/LogoImages/Terminal.png';
 import highlander from '../../Images/ProjectImages/HighlanderDetails.png'
+import modernsense from '../../Images/ProjectImages/ModernSenseDetails.png'
 import '../../index.css';
 
 
@@ -36,6 +37,12 @@ function HomePage() {
       description:"Can you hold the crown? A real time king of the hill game made with firebase",
       image: highlander,
       link:"https://highlander.wjtim.com"
+    },
+    {
+      title:"ModernSense",
+      description:"Let these ML models find out how your users really feel. Made with Python and Flask",
+      image: modernsense,
+      link:"https://github.com/wjtim/modernSense"
     },
     {
       title: '7point5.club',
